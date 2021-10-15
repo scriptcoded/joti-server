@@ -22,12 +22,12 @@ app.post('/', (req, res, next) => {
   ])
 
   cmd.stdout.on('data', (data) => {
-    stdout += `${data}\n`
+    stdout += `${data}`
     console.log(`stdout: ${data}`);
   });
   
   cmd.stderr.on('data', (data) => {
-    stderr += `${data}\n`
+    stderr += `${data}`
     console.error(`stderr: ${data}`);
   });
 
