@@ -6,8 +6,8 @@ ma2 = Pin(3, Pin.OUT)
 mb1 = Pin(4, Pin.OUT)
 mb2 = Pin(5, Pin.OUT)
 
-leftDelay = (1 / 1000) * 500
-rightDelay = (1 / 1000) * 450
+leftDelay = (1 / 1000) * 470
+rightDelay = (1 / 1000) * 440
 
 def move_forward_on():
   ma1.value(0)
