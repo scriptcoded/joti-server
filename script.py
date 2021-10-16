@@ -40,5 +40,3 @@ def turnRight():
   ma2.value(0)
   mb1.value(0)
   mb2.value(0)
-
-turnRight()

@@ -8,8 +8,12 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+const header = fs.readFileSync('header.py')
+
 app.post('/', (req, res, next) => {
-  fs.writeFile('tmp.py', req.body.script, (err) => {
+  const script = header + '\n' + req.body.script
+
+  fs.writeFile('tmp.py', script, (err) => {
     if (err) {
       res.send({
         error: err
